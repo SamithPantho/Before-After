@@ -1,0 +1,68 @@
+.before{
+	border: 5px solid black;
+	overflow: hidden;
+}
+.after{
+	margin-top: 5%;
+	overflow: hidden;
+	border: 5px solid black;
+}
+.wrapper{
+	float: left;
+}
+.wrapper2{
+	float: right;
+}
+.b1,.b2,.a1,.a2{
+	margin-bottom: 5%;
+	position: relative;
+	background-color: black;
+	color:white;
+    border-radius: 21px;
+    padding: 20px;
+    
+
+}
+.b1::before{
+	content: "";
+    position: absolute;
+    border: 40px solid transparent;
+    border-bottom-color: black;
+    border-top: 0px;
+    border-right: 0px;
+    bottom: 100%;
+    left: 6%;
+}
+
+.b2::before{
+	content: "";
+    position: absolute;
+    border: 40px solid transparent;
+    border-bottom-color: black;
+    border-top: 0px;
+    border-left: 0px;
+    bottom: 99%;
+    left: 89%;
+}
+
+.a1::after{
+	content: "";
+    position: absolute;
+    border: 40px solid transparent;
+    border-top-color: black;
+    border-bottom: 0px;
+    border-left: 0px;
+    top: 99%;
+    right: 10%;
+}
+
+.a2::after{
+	content: "";
+    position: absolute;
+    border: 40px solid transparent;
+    border-top-color: black;
+    border-bottom: 0px;
+    border-right: 0px;
+    top: 99%;
+    left: 10%;
+}
